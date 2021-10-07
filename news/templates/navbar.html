@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark"> 
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-dark bg-dark" href="{% url 'newsToday'%}">The Moringa Tribune</a>
+            </div>
+            <!-- add a  search form -->
+            <form class="navbar-form" role="search" action="{% url 'search_results' %}">
+                <!-- action attribute refers to the url called when the from is submitted -->
+            <div class="col-sm-4 col-md-4 navbar-right">
+
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search Article" name="article">
+                  <div class="input-group-btn">
+                    <button class="btn btn-primary" type="submit" style="width: 250px;"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+      
+              </form>
+            </div>
+      <!-- search form ends here -->
+        </div>
+
+    </nav>
+    
+</body>
+</html>
